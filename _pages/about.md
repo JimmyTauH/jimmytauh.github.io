@@ -9,7 +9,7 @@ profile:
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>C216, ISTBI</p>
+    <p>StuC216, ISTBI</p>
     <p>Fudan University (Zhangjiang Campus), No. 825, Zhangheng Road</p>
     <p>Pudong New Area, Shanghai</p>
 
