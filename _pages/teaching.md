@@ -1,12 +1,20 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching
+title: Courses&Teaching
 description: Materials for courses you taught. Replace this text with your description.
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Teaching Experience
 
-Organize your courses by years, topics, or universities, however you like!
+### 2023-2024 Academic Year
+
+#### Spring Semester
+
+- **Course:** Computer Organization and Design
+  - **Institution:** School of Computer Science, Wuhan University
+  - **Role:** Teaching Assistant
+  - **Instructor:** Prof. Zhaohui Cai
+  - **Description:** Assisted in teaching the fundamentals of computer organization, including processor design, memory hierarchy, input/output systems, and performance evaluation. Responsibilities included leading discussion sections, grading assignments, and providing support to students during office hours.
