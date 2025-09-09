@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>Ph.D.@Fudan University</a>. DMIIP, ISTBI.
 
 profile:
   align: right
