@@ -6,7 +6,7 @@ subtitle: <a href='#'>Ph.D.@Fudan University</a>. DMIIP, ISTBI.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>555 your office number</p>
