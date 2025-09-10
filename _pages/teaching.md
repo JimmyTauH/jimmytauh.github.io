@@ -2,12 +2,12 @@
 layout: page
 permalink: /teaching/
 title: Courses&Teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: # Materials for courses you taught. Replace this text with your description.
 nav: true
 nav_order: 6
 ---
 
-## Teaching Experience
+## TA Experience
 
 ### 2023-2024 Academic Year
 
