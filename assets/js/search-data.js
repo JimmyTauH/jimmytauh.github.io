@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -109,7 +109,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%68%65%7A%74@%6D.%66%75%64%61%6E.%65%64%75.%63%6E", "_blank");
+          window.open("mailto:%7A%74%68%65%32%35@%6D.%66%75%64%61%6E.%65%64%75.%63%6E", "_blank");
         },
       },{
         id: 'social-github',
