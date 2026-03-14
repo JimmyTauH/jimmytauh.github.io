@@ -2,14 +2,14 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Ph.D.@Fudan University</a>. DMIIP, ISTBI.
+subtitle: <a href='#'>Ph.D. Student @ Fudan University</a>. DMIIP, ISTBI.
 
 profile:
   align: right
-  image: prof_pic.png
+  image: zhentao_he.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>StuC216, ISTBI</p>
+    <p>C22, ISTBI</p>
     <p>Fudan University (Zhangjiang Campus), No. 825, Zhangheng Road</p>
     <p>Pudong New Area, Shanghai</p>
 
@@ -27,8 +27,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am **Zhentao He** (James He), a Ph.D. student at [Fudan University](https://www.fudan.edu.cn/) in the [Institute of Science and Technology for Brain-inspired Intelligence (ISTBI)](https://istbi.fudan.edu.cn/). My research focuses on **Bioinformatics** and **AI for Medicine**, particularly in multiomics data analysis and perturbation prediction.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I completed my B.E. in Computer Science & Technology at [Wuhan University](https://www.whu.edu.cn/) (2021-2025), where I was a **Hongyi Honor College** student with a GPA of 3.91/4.00. During my undergraduate studies, I worked on single-cell multiomics data integration methods at the [BIOD Lab](http://biod.whu.edu.cn/en/index.html).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently, I am pursuing my Ph.D. under the supervision of [Prof. Shanfeng Zhu](https://scholar.google.com/citations?user=pnzYLPIAAAAJ), working on integration and analysis of spatial multiomics data. I am also passionate about applying machine learning techniques to drug discovery and molecular design.
+
+**Research Interests:**
+- Multiomics Analysis (Single-cell & Spatial transcriptomics)
+- Perturbation Prediction  
+- AI for Drug Discovery
+
+Feel free to reach out via [email](mailto:zthe25@m.fudan.edu.cn) or check out my [GitHub](https://github.com/JimmyTauH) for my projects!

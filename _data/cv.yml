@@ -2,96 +2,131 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Zhentao He (James He)
+    - name: Label
+      value: Ph.D. Student
+    - name: Email
+      value: zthe25@m.fudan.edu.cn
+    - name: URL
+      value: https://jimmytauh.github.io/
+    - name: Summary
+      value: A Ph.D. student in Bioinformatics and AI for Medicine at Fudan University, with research focus on multiomics data analysis and perturbation prediction.
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Data Mining and Intelligent Information Processing
+      institution: Fudan University, Shanghai, China
+      year: 2025 - 2030
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - ISTBI (Institute of Science and Technology for Brain-inspired Intelligence)
+        - Advisor: Prof. Shanfeng Zhu
+    - title: B.E. in Computer Science & Technology
+      institution: Wuhan University, Wuhan, China
+      year: 2021 - 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Hongyi Honor College Student
+        - GPA: 3.91/4.00
+        - Outstanding Student Award
+        - IELTS Band 7
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: PhD Student Researcher
+      institution: Lab of Data Mining and Intelligent Information Processing, ISTBI, Fudan University
+      year: 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Integration and analysis of spatial multiomics data
+        - Advisor: Prof. Shanfeng Zhu
+    - title: Undergraduate Researcher
+      institution: BIOD Lab, School of Computer Science, Wuhan University
+      year: 2022 - 2025
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Developed methods for single-cell multiomics data integration and analysis
+        - Predicted the impact of drug and genetic perturbations on cell states
+        - Studied metabolic pathway design and molecular feature representation techniques
+        - Advisor: Prof. Lihua Zhang
+    - title: iGEM Team Member (Head of Model Team)
+      institution: WHU-China, CRISPReporter
+      year: 2022 - 2023
       description:
+        - Gold Medal; Nomination for Best Foundational Advance Project
+        - A novel multi-level DNA memory device with CRISPR technology and its software suite
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Teaching Assistant Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Teaching Assistant
+      institution: Computer Organization and Design， Wuhan University
+      year: 2024 - 2025
+      description:
+        - Assisted in teaching the fundamentals of computer organization.
+        - Held office hours for student consultations.
 
-- title: Honors and Awards
+- title: Publications
   type: time_table
   contents:
-    - year: 1921
+    - title: "Interpretable Data Integration for Single Cell and Spatial Multi-Omics"
+      institution: Cell Systems, 2026
+      year: 2026
+      description:
+        - Yang, Chenghui and He, Zhentao and Nie, Qing and Zhang, Lihua
+        - Published online February 4, 2026
+        - DOI: 10.1016/j.cels.2025.101479
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: CRISPReporter - Model and Software Suite
+      year: 2023
+      description:
+        - sgRNA generator utilizing machine learning and sequence alignment to predict on-target and off-target rates
+        - Editing simulator to emulate temporal relationships between multi-level signal recordings
+    - title: Multiomics Integration via Feature-Guided Optimal Transport (FGOT)
+      year: 2024
+      description:
+        - Feature-guided optimal transport for integration of cells across different modalities
+        - Contributions include coding, experiments, and co-authorship of the manuscript
+
+- title: Languages
+  type: nested_list
+  contents:
+    - title: Chinese
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Native speaker
+    - title: English
       items:
-        - Max Planck Medal
+        - Fluent (IELTS Band 7)
+
+- title: Competencies & Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - Python, C++, R
+    - title: Libraries and Tools
+      items:
+        - PyTorch, Git, Docker
+        - Scanpy, Seurat, etc.
+    - title: ML Architectures
+      items:
+        - VAE, GNN, GAN, OT (Neural Optimal Transport), Transformer, etc.
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Bioinformatics
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Multiomics Analysis
+        - Perturbation Prediction
+    - title: AI for Medicine
       items:
-        - Description 1.
-        - Description 2.
+        - Drug discovery and molecular design
+        - Single-cell and spatial transcriptomics
 
-- title: Other Interests
+- title: References
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <b>Prof. Shanfeng Zhu</b> - Fudan University, Advisor
+    - <b>Prof. Lihua Zhang</b> - Wuhan University, Undergraduate Advisor
