@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "A growing collection of your cool projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-repositories",
           title: "Repositories",
           description: "Below are my GitHub profile and GitHub repositories I&#39;ve contributed to.",
@@ -44,19 +37,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "dropdown-bookshelf",
+        },{id: "dropdown-projects",
+              title: "Projects",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/projects/";
+              },
+            },{id: "dropdown-bookshelf",
               title: "Bookshelf",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "Blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/blog/";
               },
             },{id: "post-a-post-with-plotly-js",
         
@@ -99,9 +92,12 @@ ninja.data = [{
             },},{id: "news-embarking-on-a-phd-journey-at-fudan-university-sparkles-smile",
           title: 'Embarking on a PhD Journey at Fudan University. :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "news-our-paper-interpretable-data-integration-for-single-cell-and-spatial-multi-omics-has-been-published-in-cell-systems-read-the-paper-here",
+          title: '🎉 Our paper “Interpretable Data Integration for Single Cell and Spatial Multi-Omics” has...',
+          description: "",
+          section: "News",},{id: "projects-fgot-multiomics-integration",
+          title: 'FGOT - Multiomics Integration',
+          description: "Feature-Guided Optimal Transport for Single Cell and Spatial Multi-Omics Integration",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{
