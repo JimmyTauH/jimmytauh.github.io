@@ -20,13 +20,13 @@
       year: 2025 - 2030
       description:
         - ISTBI (Institute of Science and Technology for Brain-inspired Intelligence)
-        - Advisor: Prof. Shanfeng Zhu
+        - "Advisor: Prof. Shanfeng Zhu"
     - title: B.E. in Computer Science & Technology
       institution: Wuhan University, Wuhan, China
       year: 2021 - 2025
       description:
         - Hongyi Honor College Student
-        - GPA: 3.91/4.00
+        - "GPA: 3.91/4.00"
         - Outstanding Student Award
         - IELTS Band 7
 
@@ -38,7 +38,7 @@
       year: 2025 - Present
       description:
         - Integration and analysis of spatial multiomics data
-        - Advisor: Prof. Shanfeng Zhu
+        - "Advisor: Prof. Shanfeng Zhu"
     - title: Undergraduate Researcher
       institution: BIOD Lab, School of Computer Science, Wuhan University
       year: 2022 - 2025
@@ -46,7 +46,7 @@
         - Developed methods for single-cell multiomics data integration and analysis
         - Predicted the impact of drug and genetic perturbations on cell states
         - Studied metabolic pathway design and molecular feature representation techniques
-        - Advisor: Prof. Lihua Zhang
+        - "Advisor: Prof. Lihua Zhang"
     - title: iGEM Team Member (Head of Model Team)
       institution: WHU-China, CRISPReporter
       year: 2022 - 2023
@@ -73,7 +73,7 @@
       description:
         - Yang, Chenghui and He, Zhentao and Nie, Qing and Zhang, Lihua
         - Published online February 4, 2026
-        - DOI: 10.1016/j.cels.2025.101479
+        - "DOI: 10.1016/j.cels.2025.101479"
 
 - title: Projects
   type: time_table

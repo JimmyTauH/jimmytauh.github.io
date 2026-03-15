@@ -27,11 +27,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am **Zhentao He** (James He), a Ph.D. student at [Fudan University](https://www.fudan.edu.cn/) in the [Institute of Science and Technology for Brain-inspired Intelligence (ISTBI)](https://istbi.fudan.edu.cn/). My research focuses on **Bioinformatics** and **AI for Medicine**, particularly in multiomics data analysis and perturbation prediction.
+I am **Zhentao He** (James He), a Ph.D. student at [Fudan University](https://www.fudan.edu.cn/) in the [ISTBI](https://istbi.fudan.edu.cn/)(Institute of Science and Technology for Brain-inspired Intelligence), working under the supervision of [Prof. Shanfeng Zhu](https://scholar.google.com/citations?user=Aq6tXksAAAAJ). My research focuses on **Bioinformatics** and **AI for Medicine**, particularly in multiomics data analysis and perturbation prediction.
 
-I completed my B.E. in Computer Science & Technology at [Wuhan University](https://www.whu.edu.cn/) (2021-2025), where I was a **Hongyi Honor College** student with a GPA of 3.91/4.00. During my undergraduate studies, I worked on single-cell multiomics data integration methods at the [BIOD Lab](http://biod.whu.edu.cn/en/index.html).
-
-Currently, I am pursuing my Ph.D. under the supervision of [Prof. Shanfeng Zhu](https://scholar.google.com/citations?user=pnzYLPIAAAAJ), working on integration and analysis of spatial multiomics data. I am also passionate about applying machine learning techniques to drug discovery and molecular design.
+I received my B.E. in Computer Science & Technology from [Wuhan University](https://en.whu.edu.cn/) (2021-2025), where I was a **Hongyi Honor College** student. My undergraduate research at the [BIOD Lab](http://biod.whu.edu.cn/en/index.htm) focused on single-cell multiomics data integration methods under the guidance of [Prof. Lihua Zhang](https://scholar.google.com/citations?user=sUmlrP8AAAAJ) .
 
 **Research Interests:**
 - Multiomics Analysis (Single-cell & Spatial transcriptomics)
