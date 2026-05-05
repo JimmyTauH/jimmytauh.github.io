@@ -74,6 +74,12 @@
         - Yang, Chenghui and He, Zhentao and Nie, Qing and Zhang, Lihua
         - Published online February 4, 2026
         - "DOI: 10.1016/j.cels.2025.101479"
+    - title: "MoE-TCR: Mixture-of-experts framework for pan-specific TCR-epitope binding prediction"
+      institution: Pattern Recognition, 2026
+      year: 2026
+      description:
+        - Qu, Wei and Li, Jinxing and He, Zhentao and Wang, Jiayi and Zhu, Shanfeng
+        - "DOI: 10.1016/j.patcog.2026.113737"
 
 - title: Projects
   type: time_table
@@ -88,6 +94,11 @@
       description:
         - Feature-guided optimal transport for integration of cells across different modalities
         - Contributions include coding, experiments, and co-authorship of the manuscript
+    - title: MoE-TCR - Mixture-of-Experts for TCR-Epitope Binding Prediction
+      year: 2026
+      description:
+        - Mixture-of-experts framework leveraging criss-cross attention for pan-specific TCR-epitope binding prediction
+        - Contributions include method development, experiments, and co-authorship of the manuscript
 
 - title: Languages
   type: nested_list
