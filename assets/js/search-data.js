@@ -78,6 +78,11 @@ ninja.data = [{
           description: "Feature-Guided Optimal Transport for Single Cell and Spatial Multi-Omics Integration",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-moe-tcr",
+          title: 'MoE-TCR',
+          description: "Mixture-of-experts framework for pan-specific TCR-epitope binding prediction",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-email',
         title: 'email',
