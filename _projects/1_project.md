@@ -26,7 +26,7 @@ We use feature-guided optimal transport for the integration of cells across diff
 
 This work has been published in **Cell Systems**:
 
-> Yang, Chenghui and **He, Zhentao** and Nie, Qing and Zhang, Lihua. "Interpretable Data Integration for Single Cell and Spatial Multi-Omics." *Cell Systems*, 2026.
+> Yang, Chenghui and **He, Zhentao** and Nie, Qing and Zhang, Lihua. "Interpretable Data Integration for Single Cell and Spatial Multi-Omics." _Cell Systems_, 2026.
 
 [Read the paper](https://doi.org/10.1016/j.cels.2025.101479)
 

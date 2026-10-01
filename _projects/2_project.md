@@ -28,7 +28,7 @@ We develop a mixture-of-experts framework that leverages criss-cross attention m
 
 This work has been published in **Pattern Recognition**:
 
-> Qu, Wei and Li, Jinxing and **He, Zhentao** and Wang, Jiayi and Zhu, Shanfeng. "MoE-TCR: Mixture-of-experts framework for pan-specific TCR-epitope binding prediction." *Pattern Recognition*, 2026.
+> Qu, Wei and Li, Jinxing and **He, Zhentao** and Wang, Jiayi and Zhu, Shanfeng. "MoE-TCR: Mixture-of-experts framework for pan-specific TCR-epitope binding prediction." _Pattern Recognition_, 2026.
 
 [Read the paper](https://doi.org/10.1016/j.patcog.2026.113737)
 

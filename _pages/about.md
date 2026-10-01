@@ -11,7 +11,7 @@ scholar:
 
 profile:
   align: right
-  image: zhentao_he.jpg
+  image: profile/zhentao_he.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p style="text-align:center">
@@ -41,6 +41,7 @@ I am **Zhentao He** (James He), a Ph.D. student at [Fudan University](https://ww
 I received my B.E. in Computer Science & Technology from [Wuhan University](https://en.whu.edu.cn/) (2021–2025), where I was a **Hongyi Honor College student** and graduated as an **Outstanding Graduate of Wuhan University (Class of 2025)**. My undergraduate research at the [BIOD Lab](http://biod.whu.edu.cn/en/index.htm) focused on single-cell multiomics data integration methods under the guidance of [Prof. Lihua Zhang](https://scholar.google.com/citations?user=sUmlrP8AAAAJ).
 
 **Research Interests:**
+
 - Representation Learning
 - Generalization & Adaptation
 - Multimodal Learning for Multiomics

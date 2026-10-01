@@ -6,7 +6,7 @@ This guide documents the content-maintenance workflow for Zhentao He's personal 
 
 - The compact links below the profile photo are the `profile.more_info` HTML block in `_pages/about.md`.
 - Footer icons are managed separately in `_data/socials.yml`.
-- The browser-tab icon is set by `icon` in `_config.yml`. Use a square SVG or PNG stored in `assets/img/` (the current monogram is `favicon-zt.svg`).
+- The browser-tab icon is set by `icon` in `_config.yml`. Use a square SVG or PNG stored in `assets/img/` (the current monogram is `favicon-zt-red.svg`). Browsers maintain a persistent favicon cache per page URL, so use a new filename and update `icon` whenever replacing the artwork; changing only the contents of the existing file may leave previously visited subpages showing the old icon.
 
 ## Local preview and deployment
 
@@ -22,22 +22,55 @@ Open `http://localhost:8080`. Changes to Markdown, YAML, BibTeX, and images are 
 docker compose down
 ```
 
-Before committing, check the rendered homepage, `/publications/`, `/cv/`, `/projects/`, and `/repositories/`. Then run `git diff --check`, commit on `main`, and push. GitHub Pages deploys from the repository workflow.
+Before committing, check the rendered homepage, `/publications/`, `/cv/`, `/projects/`, and `/repositories/`. Then run `npm ci`, `npm run format:check`, and `git diff --check`. Commit on `main` and push; GitHub Pages deploys from the repository workflow.
+
+### Production build policy
+
+- Production deployment must retain site-wide HTML compression through `jekyll-minifier`. Do not remove or disable it merely to shorten the build time.
+- The current production build time of approximately 114 seconds is acceptable. Treat this as the intentional cost of full-site compression unless a replacement provides equivalent output and has been verified separately.
+- `jekyll-minifier.compress_javascript` remains disabled because JavaScript is minified separately by Terser. The minifier exclusions for `robots.txt` and the generated search scripts are intentional; they do not disable HTML compression for site pages.
+- Performance work should target unused build dependencies and unnecessarily broad asset processing without weakening production output.
+
+### Removed optional template features and assets
+
+This personal-site fork deliberately removes unused al-folio demo assets instead of accumulating build exclusions. Prettier still checks all maintained source files; its ignore list is reserved for generated files, vendored code, and formats that Prettier cannot safely rewrite. ImageMagick is intentionally different: it processes only `assets/img/profile/` and `assets/img/publication_preview/` because responsive variants are useful only for those source images.
+
+Jupyter Notebook embedding was supported by the original template but is disabled and removed by default because this site does not publish notebooks. The removal covers the complete feature rather than only its build dependency:
+
+- the `jekyll-jupyter-notebook` gem and Jekyll plugin registration;
+- Python/Jupyter installation in the deployment, accessibility, and link-check workflows and in the Docker image;
+- `jupyter-nbconvert` in the development container;
+- the example notebook under `assets/jupyter/`;
+- Jupyter-specific styles, link handling, theme synchronization, and script includes;
+- the obsolete Jupyter preview image and template documentation references.
+
+#### Restore Jupyter Notebook support
+
+Only restore this feature when a real notebook will be published. Use the Git history from before the removal as the canonical source so the restored files match this site's al-folio version:
+
+1. Find the deletion commit with `git log --diff-filter=D -- assets/jupyter/blog.ipynb`, then inspect its parent as `<commit-before-removal>`.
+2. Restore `assets/jupyter/`, `assets/css/jupyter.css`, `assets/css/jupyter-grade3.css`, `assets/css/jupyter-monokai.css`, and `assets/js/jupyter_new_tab.js` from that commit.
+3. Use the same commit's versions of `assets/js/common.js`, `assets/js/theme.js`, `_includes/scripts.liquid`, and `_includes/distill_scripts.liquid` as references, and reapply only their Jupyter-specific blocks. Do not replace whole files, because they may contain newer unrelated changes.
+4. Add `gem 'jekyll-jupyter-notebook'` to the `:jekyll_plugins` group in `Gemfile`, add `jekyll-jupyter-notebook` to `_config.yml` under `plugins`, and refresh `Gemfile.lock` with Bundler.
+5. Restore Python setup plus the appropriate Jupyter/`nbconvert` installation in `.github/workflows/deploy.yml`, `.github/workflows/axe.yml`, and `.github/workflows/broken-links-site.yml`. Restore `python3-pip` plus `nbconvert` in `Dockerfile`, and add `jupyter-nbconvert` back to `.devcontainer/devcontainer.json` if those environments are used.
+6. Add the actual `.ipynb` source under `assets/jupyter/`, integrate it into a page or post using the plugin syntax appropriate to the restored plugin version, and verify light and dark themes locally before deployment.
+
+The following unreferenced template media are also intentionally removed: numbered sample photos, legacy profile images, the rhino image, demonstration publication GIFs, and example audio, video, PDF, HTML, JSON, Plotly, and Distill bibliography files. Restore an individual asset from Git history only when adding content that actually uses it.
 
 ## Source-of-truth map
 
-| Website area | Source file(s) | What to edit |
-| --- | --- | --- |
-| Homepage biography, research interests, selected-publication ordering | `_pages/about.md` | Biography prose, interests, homepage-only Scholar ordering |
-| Complete publications and homepage selected cards | `_bibliography/papers.bib` | BibTeX metadata, abstract, DOI, code, image, selected status/order |
-| Publication-wide sorting | `_config.yml` | Scholar currently sorts full publications by year, month, and day, newest first |
-| CV webpage | `_data/cv.yml` | General information, education, publications, honors, projects, languages, skills |
-| Downloadable CV | `assets/pdf/CV_ZhentaoHe.pdf` | Replace this PDF separately after changing CV content; the webpage does **not** regenerate it |
-| Project cards and project detail pages | `_projects/*.md` | One Markdown file per project |
-| Code-repository cards | `_data/repositories.yml` | Add `owner/repository` under `github_repos` |
-| Homepage news | `_news/*.md` | One dated Markdown item per announcement |
-| Profile image and publication previews | `assets/img/` and `assets/img/publication_preview/` | Add image assets, then reference the filename in source metadata |
-| Search-index exclusions | Project front matter plus `_includes/metadata.liquid` | Use `sitemap: false` and `robots: noindex, follow` for a page that should remain accessible but not indexed |
+| Website area                                                          | Source file(s)                                              | What to edit                                                                                                |
+| --------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Homepage biography, research interests, selected-publication ordering | `_pages/about.md`                                           | Biography prose, interests, homepage-only Scholar ordering                                                  |
+| Complete publications and homepage selected cards                     | `_bibliography/papers.bib`                                  | BibTeX metadata, abstract, DOI, code, image, selected status/order                                          |
+| Publication-wide sorting                                              | `_config.yml`                                               | Scholar currently sorts full publications by year, month, and day, newest first                             |
+| CV webpage                                                            | `_data/cv.yml`                                              | General information, education, publications, honors, projects, languages, skills                           |
+| Downloadable CV                                                       | `assets/pdf/CV_ZhentaoHe.pdf`                               | Replace this PDF separately after changing CV content; the webpage does **not** regenerate it               |
+| Project cards and project detail pages                                | `_projects/*.md`                                            | One Markdown file per project                                                                               |
+| Code-repository cards                                                 | `_data/repositories.yml`                                    | Add `owner/repository` under `github_repos`                                                                 |
+| Homepage news                                                         | `_news/*.md`                                                | One dated Markdown item per announcement                                                                    |
+| Profile image and publication previews                                | `assets/img/profile/` and `assets/img/publication_preview/` | Add image assets, then reference the filename in source metadata                                            |
+| Search-index exclusions                                               | Project front matter plus `_includes/metadata.liquid`       | Use `sitemap: false` and `robots: noindex, follow` for a page that should remain accessible but not indexed |
 
 ## Add a publication
 

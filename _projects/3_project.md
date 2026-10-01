@@ -27,7 +27,7 @@ SpaDC learns sequence-aware representations for denoising and integrating spatia
 
 ### Publication & Code
 
-This work was published in *Communications Biology* (2026).
+This work was published in _Communications Biology_ (2026).
 
 - [Read the paper](https://doi.org/10.1038/s42003-026-10462-y)
 - [View the code](https://github.com/mcllllllll/SpaDC)
