@@ -6,6 +6,8 @@ img: assets/img/publication_preview/moe-tcr.jpg
 importance: 1
 category: work
 related_publications: true
+sitemap: false
+robots: noindex, follow
 ---
 
 ## MoE-TCR: Mixture-of-Experts for TCR-Epitope Binding Prediction

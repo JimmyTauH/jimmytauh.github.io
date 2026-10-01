@@ -1,5 +1,7 @@
 # al-folio
 
+> Site-specific update instructions: see [MAINTENANCE.md](MAINTENANCE.md).
+
 <div align="center">
 
 [![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)

@@ -1,7 +1,7 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
+    - name: Name
       value: Zhentao He (James He)
     - name: Label
       value: Ph.D. Student
@@ -10,7 +10,7 @@
     - name: URL
       value: https://jimmytauh.github.io/
     - name: Summary
-      value: A Ph.D. student in Bioinformatics and AI for Medicine at Fudan University, with research focus on multiomics data analysis and perturbation prediction.
+      value: A Ph.D. student at Fudan University focused on machine learning and data mining for biological data, developing robust, interpretable, and transferable representations for multiomics analysis, perturbation modeling, and protein function.
 
 - title: Education
   type: time_table
@@ -20,15 +20,16 @@
       year: 2025 - 2030
       description:
         - ISTBI (Institute of Science and Technology for Brain-inspired Intelligence)
+        - Zhuobo Fellow at Fudan University
         - "Advisor: Prof. Shanfeng Zhu"
     - title: B.E. in Computer Science & Technology
       institution: Wuhan University, Wuhan, China
       year: 2021 - 2025
       description:
         - Hongyi Honor College Student
+        - Outstanding Graduate (2025)
+        - National Scholarship (2023-2024)
         - "GPA: 3.91/4.00"
-        - Outstanding Student Award
-        - IELTS Band 7
 
 - title: Experience
   type: time_table
@@ -54,6 +55,43 @@
         - Gold Medal; Nomination for Best Foundational Advance Project
         - A novel multi-level DNA memory device with CRISPR technology and its software suite
 
+- title: Publications
+  type: time_table
+  contents:
+    - title: "MoE-TCR: Mixture-of-experts framework for pan-specific TCR-epitope binding prediction"
+      institution: Pattern Recognition, November 2026
+      year: 2026
+      description:
+        - Qu, Wei and Li, Jinxing and He, Zhentao and Wang, Jiayi and Zhu, Shanfeng
+        - "DOI: 10.1016/j.patcog.2026.113737"
+    - title: "SpaDC enables sequence-based integrative analysis and regulatory inference of spatial chromatin accessibility data"
+      institution: Communications Biology, 2026
+      year: 2026
+      description:
+        - Ma, Chuanlong and Yang, Chenghui and Zhen, Caiwei and He, Zhentao and Luo, Yong and Zhang, Lihua
+        - Published June 6, 2026
+        - "DOI: 10.1038/s42003-026-10462-y"
+    - title: "Interpretable Data Integration for Single Cell and Spatial Multi-Omics"
+      institution: Cell Systems, 2026
+      year: 2026
+      description:
+        - Yang, Chenghui and He, Zhentao and Nie, Qing and Zhang, Lihua
+        - Published online February 4, 2026
+        - "DOI: 10.1016/j.cels.2025.101479"
+
+- title: Honors & Awards
+  type: time_table
+  contents:
+    - title: Fudan University Zhuobo Program Fellow
+      institution: Fudan University
+      year: Present
+    - title: Outstanding Graduate, Class of 2025
+      institution: Wuhan University
+      year: 2025
+    - title: National Scholarship
+      institution: Ministry of Education of the People's Republic of China
+      year: 2023 - 2024
+
 - title: Teaching Assistant Experience
   type: time_table
   contents:
@@ -63,23 +101,6 @@
       description:
         - Assisted in teaching the fundamentals of computer organization.
         - Held office hours for student consultations.
-
-- title: Publications
-  type: time_table
-  contents:
-    - title: "Interpretable Data Integration for Single Cell and Spatial Multi-Omics"
-      institution: Cell Systems, 2026
-      year: 2026
-      description:
-        - Yang, Chenghui and He, Zhentao and Nie, Qing and Zhang, Lihua
-        - Published online February 4, 2026
-        - "DOI: 10.1016/j.cels.2025.101479"
-    - title: "MoE-TCR: Mixture-of-experts framework for pan-specific TCR-epitope binding prediction"
-      institution: Pattern Recognition, 2026
-      year: 2026
-      description:
-        - Qu, Wei and Li, Jinxing and He, Zhentao and Wang, Jiayi and Zhu, Shanfeng
-        - "DOI: 10.1016/j.patcog.2026.113737"
 
 - title: Projects
   type: time_table
@@ -98,6 +119,11 @@
       year: 2026
       description:
         - Mixture-of-experts framework leveraging criss-cross attention for pan-specific TCR-epitope binding prediction
+        - Contributions include method development, experiments, and co-authorship of the manuscript
+    - title: SpaDC - Spatial Chromatin Accessibility Data Analysis
+      year: 2026
+      description:
+        - Graph-regularized convolutional neural network integrating DNA sequence, chromatin accessibility, and spatial location
         - Contributions include method development, experiments, and co-authorship of the manuscript
 
 - title: Languages
@@ -124,17 +150,13 @@
       items:
         - VAE, GNN, GAN, OT (Neural Optimal Transport), Transformer, etc.
 
-- title: Academic Interests
-  type: nested_list
+- title: Research Interests
+  type: list
   contents:
-    - title: Bioinformatics
-      items:
-        - Multiomics Analysis
-        - Perturbation Prediction
-    - title: AI for Medicine
-      items:
-        - Drug discovery and molecular design
-        - Single-cell and spatial transcriptomics
+    - Representation Learning
+    - Generalization & Adaptation
+    - Multimodal Learning for Multiomics
+    - Perturbation Prediction & Protein Function Modeling
 
 - title: References
   type: list
