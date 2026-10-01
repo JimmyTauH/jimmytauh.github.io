@@ -83,7 +83,7 @@ Required practice:
 Set `selected = {true}` only for papers that should appear on the homepage. Homepage cards are automatically selected by the existing query:
 
 ```liquid
-{% bibliography --group_by none --query @*[selected=true]* %}
+{% raw %}{% bibliography --group_by none --query @*[selected=true]* %}{% endraw %}
 ```
 
 Their order is controlled by `selected_order` in `_pages/about.md`'s page-level Scholar configuration. Smaller numbers appear first. Use this policy:
@@ -95,7 +95,7 @@ Do not manually reorder the BibTeX file or alter the Liquid template to change h
 
 ### 3. Add a project page when appropriate
 
-Copy an existing `_projects/*_project.md` file. Set the title, one-sentence description, preview image, `importance`, and category. Include a short overview, key features, paper link, code link, and a `{% cite bibtex_key %}` reference.
+Copy an existing `_projects/*_project.md` file. Set the title, one-sentence description, preview image, `importance`, and category. Include a short overview, key features, paper link, code link, and a `{% raw %}{% cite bibtex_key %}{% endraw %}` reference.
 
 ```yaml
 ---
